@@ -21,9 +21,8 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
-  const { connectWallet, currentAccount } = useContext(TransContext);
-  const isLoading = true
-  const handleChange = (e) => { }
+  const { connectWallet, currentAccount, sendTransaction, formData, handleChange } = useContext(TransContext);
+  const isLoading = false
 
   const handleSubmit = (e) => {
     e.preventDefault();
